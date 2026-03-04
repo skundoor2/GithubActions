@@ -126,7 +126,7 @@ public class PowerTests
 	[TestMethod]
 	public void Power_Invalid_Kundoor()
 	{
-		Assert.ThrowsException<FormatException>(() => Program.Power("1", "a"));
+		Assert.ThrowsException<FormatException>(() => Program.Power("1", "b"));
 		Assert.ThrowsException<FormatException>(() => Program.Power("a", "1"));
 		Assert.ThrowsException<FormatException>(() => Program.Power("a", "a"));
 	}
